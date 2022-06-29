@@ -1,0 +1,19 @@
+<form [formGroup]="equipmentForm" (ngSubmit)="onSubmit()">
+    <label for="id">Id: </label>
+    <input id="id" type="text" formControlName="id" readonly>
+    <label for="model">model: </label>
+    <input id="model" type="text" formControlName="model" required>
+    <label for="brand">brand: </label>
+    <input id="brand" type="text" formControlName="brand" required>
+    <label for="weight">weight: </label>
+    <input id="weight" type="text" formControlName="weight" required>
+    <label for="manufactureDate">manufactureDate: </label>
+    <input id="manufactureDate" type="text" formControlName="manufactureDate" required>
+    <button type="submit" [disabled]="!equipmentForm.valid">Submit</button>
+    <button (click)="goBack()">Back</button>
+</form>
+<app-dialog [(visible)]="showDialog">
+	<h1>Still leave without Save?</h1>
+    <button (click)="continue()" class="btn">Yes</button>
+	<button (click)="showDialog = !showDialog" class="btn">No</button>
+</app-dialog>

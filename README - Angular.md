@@ -1,6 +1,5 @@
 # Requirements
-- Setup a React, Redux project
-  - You can use any boilerplate project, e.g. https://github.com/mCodex/react-redux-saga-boilerplate
+- Setup an Angular project
   - You are allowed to access Internet for any legal resources
 
 - This project is for managing equipments. It should include the following screens:
@@ -24,9 +23,10 @@
 
 # Additional requests
 - You must use git (local or github) to manage your code changes
+- It's better to use the latest version of Angular
+- It's better to write some basic UT code for one component
 - It's better to have consistent code style in your code
 - It's better to show proper feedback messages to user (e.g. item saved successfully, API failures, etc.)
-- It will be great if you structure your pages by `react-router-dom`, and use `redux-saga` to handle the async state changes.
 
 # API Service
 - You don't need write your own back end service (you could modify the service if necessary).
